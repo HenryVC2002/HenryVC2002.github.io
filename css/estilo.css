@@ -1,0 +1,479 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background-color: #0d1b1e; /* Color de fondo base */
+  background-image:
+    radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%),
+    radial-gradient(circle, #657D8CE5 0%, #132531 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #FFFFFF;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 90px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.logo img {
+  height: 81px; /* tamaño anterior */
+  width: 72px;
+  display: block;/
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 45px; /*antes 30px, ahora más separados */
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff; /* base claro */
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block; /* para que transform funcione bien */
+}
+
+nav a:hover {
+  color: #0d1b1e; /* oscuro potente */
+  font-weight: 700; /* más grueso */
+  transform: scale(1.18); /* crece y se ensancha */
+  letter-spacing: 0.5px; /* se separan un poco las letras */
+  text-shadow:
+    0 0 4px rgba(255,255,255,0.8),  /* borde blanco más fuerte */
+    0 0 10px rgba(255,255,255,0.6), /* halo claro adicional */
+    0 0 14px rgba(0,0,0,0.8);       /* sombra oscura profunda */
+}
+
+nav ul li a {
+  font-family: 'Lato', sans-serif;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 300px; /* 🔹 aumentamos un poco la separación */
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-img img {
+  width: 658px; /* aumentamos el tamaño de la imagen */
+  height: 529px;
+  max-width: 100%;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+/*TODOS LOS BOTONES*/
+
+.btn {
+  background: transparent;       /* 🔹 fondo transparente */
+  color: #fff;                   /* texto blanco */
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid #ffffff;     /* 🔹 marco blanco */
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #1c2a33 0%, #0f1a22 100%); /* degradado oscuro elegante */
+  border: 2px solid #2b3a44; /* borde oscuro pero definido */
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px) scale(1.02); /* levanta y agranda un poco */
+  transition: all 0.3s ease;
+}
+/* BIENVENIDA */
+.bienvenida {
+  text-align: center;
+  padding: 60px 40px;
+  margin-top: 100px;
+}
+
+.bienvenida h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.bienvenida p:first-of-type {
+  margin-bottom: 30px; /* ajusta el valor según la separación que quieras */
+}
+
+.bienvenida h3 {
+  margin-top: 70px; /* separación leve desde el párrafo */
+  font-size: 24px;
+}
+
+.bienvenida p:last-of-type {
+  margin-bottom: 20px; /* 🔹 separa un poco el texto del botón */
+}
+
+
+.bienvenida h2 span {
+  color: #00d4ff;
+}
+
+.bienvenida p {
+  max-width: 700px;
+  margin: 10px auto;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.servicios-grid {
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+}
+
+.card {
+  background: none; /* sin fondo */
+  border-radius: 0; /* sin bordes redondeados */
+  padding: 20px; /* puedes mantener el padding si quieres espacio interno */
+  text-align: center;
+}
+
+.card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+/* CONTACTO */
+
+.contacto {
+  background: url('../img/iniciobanner.png') center 64% / cover no-repeat;
+  padding: 150px 70px;
+  color: #fff;
+  text-align: left;
+  min-height: 400px;
+}
+
+.contacto-texto {
+  max-width: 700px;
+  margin-left: 40px; /* 🔹 empujamos un poco hacia la derecha */
+}
+
+.contacto-texto h3 {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.contacto-texto p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+/* FOOTER */
+footer {
+  /*elimina el fondo del footer */
+  background: none;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Contenedor de logo + info alineados en fila */
+.footer-top {
+  display: flex;
+  justify-content: flex-start; /* ahora alineado a la izquierda */
+  align-items: flex-start;     /* todos alineados desde arriba */
+  gap: 80px;                   /* separación entre logo e info */
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+/* Logo */
+.footer-logo img {
+  height: 38px;
+  width: 121px;
+  display: block;
+}
+
+/* Info (contactanos + paginas) */
+.footer-info {
+  display: flex;
+  gap: 60px;       /* espacio general entre todos los hijos */
+  text-align: left;
+  margin-left: 100px;
+}
+
+.footer-info-contactanos {
+  margin-right: 100px; /* separación extra solo respecto al siguiente */
+}
+
+/* Contact-item */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.contact-item img {
+  height: 18px;
+  width: 18px;
+}
+
+.footer-info h4 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.footer-info a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.footer-info-contactanos h4 {
+  margin-bottom: 30px; /*espacio entre el título y el primer item */
+}
+
+.footer-info-contactanos .contact-item {
+  margin-bottom: 25px; /*espacio entre cada línea de contacto */
+}
+
+.footer-info-paginas h4 {
+  margin-bottom: 30px; /*espacio entre el título y el primer enlace */
+}
+
+.footer-info-paginas p {
+  margin-bottom: 20px; /*espacio entre cada enlace */
+}
+
+.footer-info p {
+  font-size: 15px;
+}
+
+.footer-info a:hover {
+  color: #0d1b1e; /* oscuro potente */
+  font-weight: 700; /* más grueso */
+  transform: scale(1.18); /* crece y se ensancha */
+  letter-spacing: 0.5px; /* se separan un poco las letras */
+  text-shadow:
+    0 0 4px rgba(255,255,255,0.8),  /* borde blanco más fuerte */
+    0 0 10px rgba(255,255,255,0.6), /* halo claro adicional */
+    0 0 14px rgba(0,0,0,0.8);       /* sombra oscura profunda */
+}
+
+/* Copy abajo */
+.copy {
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 20px;
+  align-self: flex-end; /* lo lleva a la derecha dentro del footer */
+  text-align: right;    /* alinea el texto a la derecha */
+  width: 100%; /* ocupa todo el ancho para que se pueda alinear bien */
+  margin-right: 40px;  
+}
+
+/* =========================
+   📱📱 RESPONSIVE DESIGN 📱📱
+========================= */
+
+/* Tablet: menos de 992px */
+@media (max-width: 992px) {
+
+  header {
+    padding: 40px 30px;
+  }
+
+  nav ul {
+    gap: 25px; /* menos separación */
+  }
+
+  .hero {
+    gap: 60px; /* menos separación entre texto e imagen */
+    padding: 40px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-img img {
+    width: 90%;
+    height: auto;
+  }
+
+  .bienvenida h2 {
+    font-size: 36px;
+  }
+
+  .contacto {
+    padding: 100px 30px;
+    background-position: center 50%; /* ajusta la imagen */
+  }
+
+  .contacto-texto {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .footer-info {
+    gap: 40px;
+    margin-left: 0;
+    flex-wrap: wrap; /* apila en columnas */
+  }
+}
+
+/* Móvil: menos de 768px */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .bienvenida {
+    padding: 40px 20px;
+  }
+
+  .bienvenida h2 {
+    font-size: 32px;
+  }
+
+  .bienvenida h3 {
+    font-size: 20px;
+  }
+
+  .servicios-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .contacto {
+    padding: 80px 20px;
+    text-align: center;
+    background-position: center 50%;
+  }
+
+  .contacto-texto h3 {
+    font-size: 20px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 40px;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .copy {
+    text-align: center;
+    margin-right: 0;
+  }
+}
+
+/* Extra pequeño: menos de 480px */
+@media (max-width: 480px) {
+
+  nav a {
+    font-size: 18px;
+  }
+
+  .hero-content h1 {
+    font-size: 26px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .bienvenida h2 {
+    font-size: 26px;
+  }
+
+  .bienvenida p {
+    font-size: 14px;
+  }
+
+  .contacto-texto h3 {
+    font-size: 18px;
+  }
+
+  .footer-info h4 {
+    font-size: 18px;
+  }
+
+  .footer-info p {
+    font-size: 14px;
+  }
+}

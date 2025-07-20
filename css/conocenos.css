@@ -1,0 +1,671 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d1b1e; /* Color de fondo base */
+  background-image:
+    radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%),
+    radial-gradient(circle, #657D8CE5 0%, #132531 100%);
+  background-repeat: no-repeat;
+  background-size: cover; /* para que ocupe todo */
+  background-attachment: fixed; /* opcional: efecto más uniforme al hacer scroll */
+  color: #FFFFFF;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+header {
+  background: 
+    linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), /* 🔹 más claro aún */
+    url('../img/banner2.png') center 28%/cover no-repeat;
+  color: #fff;
+  padding: 70px 90px;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* contenedor fila superior: logo y nav */
+.header-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* logo a la izq, nav a la der */
+  align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* logo tamaño */
+.logo img {
+  height: 81px; /* tamaño anterior */
+  width: 72px;
+  display: block;
+}
+
+/* nav en fila */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 45px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff; /* base claro */
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block; /* para que transform funcione bien */
+}
+
+nav a:hover {
+  color: #0d1b1e; /* oscuro potente */
+  font-weight: 700; /* más grueso */
+  transform: scale(1.18); /* crece y se ensancha */
+  letter-spacing: 0.5px; /* se separan un poco las letras */
+  text-shadow:
+    0 0 4px rgba(255,255,255,0.8),  /* borde blanco más fuerte */
+    0 0 10px rgba(255,255,255,0.6), /* halo claro adicional */
+    0 0 14px rgba(0,0,0,0.8);       /* sombra oscura profunda */
+}
+
+nav ul li a {
+  font-family: 'Lato', sans-serif;
+}
+
+/* hero debajo */
+.hero-conocenos {
+  margin-top: 150px; /* separación respecto a la fila */
+  margin-bottom: 170px;
+  text-align: center;
+}
+
+.hero-conocenos h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+/*CONTENIDO*/
+
+/* QUIENES SOMOS */
+.quienes-somos {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.quienes-somos h2 {
+  font-size: 40px; /* antes 28px, ahora más grande */
+  margin-bottom: 40px;
+}
+
+.quienes-somos p {
+  max-width: 650px;
+  margin: 10px auto;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  font-size: 16px;
+  
+}
+
+.quienes-somos p strong{
+  font-size: 20px; /* el texto en cursiva un poco más grande */
+  font-style: SemiBold;
+  display: block; /* para que aparezca en su propia línea */
+  margin-top: 20px;
+}
+
+/* imagen dentro de la sección */
+.logo-QS img {
+  height: 55px; /*tamaño reducido */
+  width: auto;
+  display: block;
+  margin: 0 auto; /* centrado */
+  margin-top: 30px; /* separación respecto al texto */
+}
+
+/* OBJETIVO */
+.objetivo {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.objetivo h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.objetivo > p {
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.mision-vision {
+  display: flex;
+  justify-content: center;
+  gap: 400px; /* separación entre los dos bloques */
+  flex-wrap: wrap;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/* Bloque misión */
+.mv-item-izquierda {
+  max-width: 500px;
+  text-align: left;
+}
+
+.mv-item-title-M {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mv-item-title-M img {
+  width: 64px;
+  height: 64px;
+}
+
+.mv-item-title-M h4 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.mv-item-izquierda p {
+  margin-top: 20px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Bloque visión */
+.mv-item-derecha {
+  max-width: 500px;
+  text-align: right;
+}
+
+.mv-item-title-V {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end; /* asegura que se alineen hacia la derecha */
+}
+
+.mv-item-title-V img {
+  width: 64px;
+  height: 64px;
+}
+
+.mv-item-title-V h4 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.mv-item-derecha p {
+  margin-top: 20px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* NUESTRA ESTRUCTURA */
+.estructura-header {
+  background: url('../img/estructurabanner.png') center 90% / cover no-repeat;
+  min-height: 450px;
+  padding: 40px; /* margen interno */
+  display: flex;
+  flex-direction: column;      /* apila h3 y p uno debajo del otro */
+  justify-content: center;     /* centra verticalmente */
+  align-items: center;         /* centra horizontalmente */
+  text-align: center;
+}
+
+.estructura-header h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.estructura-header p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* GRID DE ESTRUCTURA */
+.estructura-grid {
+  display: grid;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  grid-template-columns: auto auto;
+  column-gap: 400px; /* espacio entre las dos columnas */
+  row-gap: 100px; /* espacio entre filas */
+  justify-content: center;
+}
+
+/* Tarjeta sin fondo ni bordes */
+.card-est-1,
+.card-est-2,
+.card-est-3,
+.card-est-4 {
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.3s;
+}
+
+/* Contenedor interno para imagen y texto en fila */
+.card-content {
+  display: flex;
+  align-items: flex-start; /* alinear al inicio */
+  gap: 15px; /* espacio entre imagen y texto */
+  max-width: 300px; /* ancho máximo para no verse tan largo */
+}
+
+/* Imagen más grande */
+.card-img img {
+  width: 80px; /* antes 60px */
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+/* Texto a la derecha más grande */
+.card-text h4 {
+  font-size: 16px; /* antes 20px */
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.card-text p {
+  font-size: 16px; /* antes 15px */
+  line-height: 1.6; /* más espacio entre líneas */
+  text-align: left;
+  margin: 0;
+}
+
+/* efecto hover */
+.card-est-1:hover,
+.card-est-2:hover,
+.card-est-3:hover,
+.card-est-4:hover {
+  transform: translateY(-5px);
+}
+
+/* ÁREAS DESTACADAS */
+.estructura-areas {
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+  margin-bottom: 100px
+}
+
+.estructura-areas h4 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  text-align: left; /* alineado a la izquierda */
+}
+
+/* CONTENEDOR GENERAL IZQ + DER */
+.estruc-contenedor {
+  display: flex;
+  justify-content: space-between; /* izquierda y derecha */
+  align-items: flex-start;
+  gap: 112px; /* espacio entre ellos */
+  flex-wrap: wrap; /* en pantallas pequeñas se apilan */
+}
+
+/* ========================= IZQUIERDA ========================= */
+.estruc-izq {
+  display: flex;
+  flex-direction: column; /* texto arriba y luego la imagen */
+  align-items: flex-start;
+  text-align: left;
+  gap: 15px; /* espacio entre texto e imagen */
+  flex: 1 1 45%; /* ocupa 45% del ancho */
+}
+
+/* texto */
+.estruc-service-cont {
+  max-width: 600px;
+}
+
+.estruc-service-cont h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.estruc-service-cont p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
+}
+
+/* imagen */
+.estruc-img img {
+  width: 93px; /* tamaño reducido */
+  max-width: 100%;
+  display: block;
+}
+
+/* ========================= DERECHA ========================= */
+.estruc-der {
+  flex: 1 1 45%; /* ocupa 45% del ancho */
+}
+
+/* listado */
+.personal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.personal li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+/* imagen del miembro */
+.personal li img {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  margin-top: 4px; /* ajustar alineación con texto */
+}
+
+/* texto del miembro */
+.personal li div {
+  text-align: left;
+}
+
+.personal li strong {
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.personal li p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* FOOTER */
+footer {
+  /*elimina el fondo del footer */
+  background: none;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Contenedor de logo + info alineados en fila */
+.footer-top {
+  display: flex;
+  justify-content: flex-start; /* ahora alineado a la izquierda */
+  align-items: flex-start;     /* todos alineados desde arriba */
+  gap: 80px;                   /* separación entre logo e info */
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+/* Logo */
+.footer-logo img {
+  height: 38px;
+  width: 121px;
+  display: block;
+}
+
+/* Info (contactanos + paginas) */
+.footer-info {
+  display: flex;
+  gap: 60px;       /* espacio general entre todos los hijos */
+  text-align: left;
+  margin-left: 100px;
+}
+
+.footer-info-contactanos {
+  margin-right: 100px; /* separación extra solo respecto al siguiente */
+}
+
+/* Contact-item */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.contact-item img {
+  height: 18px;
+  width: 18px;
+}
+
+.footer-info h4 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.footer-info a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.footer-info-contactanos h4 {
+  margin-bottom: 30px; /*espacio entre el título y el primer item */
+}
+
+.footer-info-contactanos .contact-item {
+  margin-bottom: 25px; /*espacio entre cada línea de contacto */
+}
+
+.footer-info-paginas h4 {
+  margin-bottom: 30px; /*espacio entre el título y el primer enlace */
+}
+
+.footer-info-paginas p {
+  margin-bottom: 20px; /*espacio entre cada enlace */
+}
+
+.footer-info p {
+  font-size: 15px;
+}
+
+.footer-info a:hover {
+  color: #0d1b1e; /* oscuro potente */
+  font-weight: 700; /* más grueso */
+  transform: scale(1.18); /* crece y se ensancha */
+  letter-spacing: 0.5px; /* se separan un poco las letras */
+  text-shadow:
+    0 0 4px rgba(255,255,255,0.8),  /* borde blanco más fuerte */
+    0 0 10px rgba(255,255,255,0.6), /* halo claro adicional */
+    0 0 14px rgba(0,0,0,0.8);       /* sombra oscura profunda */
+}
+
+/* Copy abajo */
+.copy {
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 20px;
+  align-self: flex-end; /* lo lleva a la derecha dentro del footer */
+  text-align: right;    /* alinea el texto a la derecha */
+  width: 100%; /* ocupa todo el ancho para que se pueda alinear bien */
+  margin-right: 40px;  
+}
+
+/* ========== 📱 RESPONSIVE DESIGN 📱 ========== */
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 992px) {
+
+  header {
+    padding: 40px 30px;
+    min-height: 400px;
+    background-position: center 20%;
+  }
+
+  nav ul {
+    gap: 25px;
+  }
+
+  .hero-conocenos h1 {
+    font-size: 36px;
+  }
+
+  .mision-vision {
+    gap: 80px; /* menos separación entre misión y visión */
+  }
+
+  .estructura-grid {
+    column-gap: 100px; /* menos separación entre columnas */
+  }
+
+  .estruc-contenedor {
+    gap: 50px;
+  }
+
+  .footer-top {
+    gap: 40px;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .footer-info {
+    gap: 40px;
+    margin-left: 0;
+  }
+}
+
+/* Móviles grandes (pantallas pequeñas) */
+@media (max-width: 768px) {
+
+  .header-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  header {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .hero-conocenos {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .hero-conocenos h1 {
+    font-size: 30px;
+  }
+
+  .quienes-somos h2,
+  .objetivo h3,
+  .estructura-header h3 {
+    font-size: 30px;
+  }
+
+  .mision-vision {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mv-item-izquierda,
+  .mv-item-derecha {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .estructura-grid {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+
+  .estruc-contenedor {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .estruc-izq,
+  .estruc-der {
+    flex: 1 1 100%;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .copy {
+    text-align: center;
+    margin-right: 0;
+  }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 480px) {
+
+  nav a {
+    font-size: 18px;
+  }
+
+  .hero-conocenos h1 {
+    font-size: 26px;
+  }
+
+  .quienes-somos p,
+  .objetivo > p,
+  .mv-item-izquierda p,
+  .mv-item-derecha p,
+  .card-text p,
+  .estruc-service-cont p,
+  .personal li p {
+    font-size: 14px;
+  }
+
+  .mv-item-title-M h4,
+  .mv-item-title-V h4,
+  .estructura-header h3 {
+    font-size: 28px;
+  }
+
+  .card-text h4 {
+    font-size: 18px;
+  }
+
+  footer {
+    padding: 40px 20px;
+  }
+}
