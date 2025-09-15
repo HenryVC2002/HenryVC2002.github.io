@@ -1,0 +1,8 @@
+body {
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(135deg, #1a1a1a, #000);
+  color: white;
+}
