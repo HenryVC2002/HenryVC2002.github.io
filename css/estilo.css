@@ -6,3 +6,18 @@ header {
   background: linear-gradient(135deg, #1a1a1a, #000);
   color: white;
 }
+
+/* Imagen de perfil */
+header img {
+  width: 180px;      /* tamaño más controlado */
+  height: 180px;
+  object-fit: cover; /* evita deformaciones */
+  border: 4px solid #fff; /* borde blanco elegante */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* sombrita */
+  transition: transform 0.3s ease;
+}
+
+header img:hover {
+  transform: scale(1.05); /* efecto zoom al pasar el mouse */
+}
+
