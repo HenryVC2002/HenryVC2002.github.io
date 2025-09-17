@@ -28,19 +28,217 @@
 
   <!-- Hero -->
   <header class="vh-100 d-flex flex-column justify-content-center align-items-center text-center">
-    <img src="/img/yo.jpeg" class="rounded-circle mb-3" alt="Foto Henry">
+    <img src="img/yo.jpeg" class="rounded-circle mb-3" alt="Foto Henry">
     <h1 class="fw-bold">Henry</h1>
     <p class="lead">Desarrollador Web | Apasionado por el código</p>
   </header>
 
   <!-- Sobre mí -->
-  <section id="sobre-mi" class="container py-5">
-    <h2 class="mb-4">Sobre mí</h2>
-    <p>
-      Soy Henry, un desarrollador en formación con interés en crear proyectos prácticos y útiles.
-      Aquí iré compartiendo mis avances y portafolio.
-    </p>
-  </section>
+<section id="sobre-mi" class="container py-5">
+  <div class="row align-items-center">
+    <!-- Imagen -->
+    <div class="col-md-4 text-center mb-4 mb-md-0">
+      <img src="img/yo.jpeg" alt="Foto Henry" class="img-fluid rounded-circle shadow" style="max-width: 220px;">
+    </div>
+    <!-- Texto -->
+    <div class="col-md-8">
+      <h2 class="mb-3">Sobre mí</h2>
+      <p class="lead">
+        Soy Henry, un desarrollador en formación con mayor enfoque en el <strong>desarrollo backend</strong> 
+        y en el <strong>testeo de software</strong>. Me interesa construir sistemas sólidos y confiables, 
+        priorizando la lógica y el funcionamiento interno de las aplicaciones.
+      </p>
+      <p>
+        No me dedico tanto al área de diseño, por lo que mi portafolio es más <em>básico en apariencia</em>, 
+        pero refleja lo que realmente me apasiona: <strong>programar, probar y optimizar aplicaciones</strong>.  
+        Aquí encontrarás proyectos que muestran mis avances en estas áreas.
+      </p>
+      <!-- Botón de acción -->
+      <a href="portafolio.html" class="btn btn-outline-light mt-3">
+        <i class="bi bi-briefcase-fill"></i> Ver Portafolio
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Tecnologías y herramientas -->
+<section id="tecnologias" class="container py-5">
+  <h2 class="mb-4 text-center">Tecnologías y herramientas</h2>
+  <p class="text-center mb-5">
+    Estas son algunas de las tecnologías y frameworks que utilizo en mis proyectos, 
+    con un enfoque en <strong>backend</strong> y <strong>testeo de software</strong>.
+  </p>
+  
+  <div class="row g-4 text-center">
+    <!-- PHP -->
+    <div class="col-6 col-md-3">
+      <div class="card bg-secondary text-light shadow-sm h-100">
+        <div class="card-body">
+          <i class="bi bi-code-slash display-5 text-warning"></i>
+          <h6 class="mt-3">PHP</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="col-6 col-md-3">
+      <div class="card bg-secondary text-light shadow-sm h-100">
+        <div class="card-body">
+          <i class="bi bi-braces display-5 text-info"></i>
+          <h6 class="mt-3">JavaScript</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HTML -->
+    <div class="col-6 col-md-3">
+      <div class="card bg-secondary text-light shadow-sm h-100">
+        <div class="card-body">
+          <i class="bi bi-filetype-html display-5 text-danger"></i>
+          <h6 class="mt-3">HTML</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CSS -->
+    <div class="col-6 col-md-3">
+      <div class="card bg-secondary text-light shadow-sm h-100">
+        <div class="card-body">
+          <i class="bi bi-filetype-css display-5 text-primary"></i>
+          <h6 class="mt-3">CSS</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Java -->
+    <div class="col-6 col-md-3">
+      <div class="card bg-secondary text-light shadow-sm h-100">
+        <div class="card-body">
+          <i class="bi bi-cup-hot display-5 text-warning"></i>
+          <h6 class="mt-3">Java</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kotlin -->
+    <div class="col-6 col-md-3">
+      <div class="card bg-secondary text-light shadow-sm h-100">
+        <div class="card-body">
+          <i class="bi bi-phone display-5 text-success"></i>
+          <h6 class="mt-3">Kotlin</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- MySQL -->
+    <div class="col-6 col-md-3">
+      <div class="card bg-secondary text-light shadow-sm h-100">
+        <div class="card-body">
+          <i class="bi bi-database-fill display-5 text-info"></i>
+          <h6 class="mt-3">MySQL</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apache JMeter -->
+    <div class="col-6 col-md-3">
+      <div class="card bg-secondary text-light shadow-sm h-100">
+        <div class="card-body">
+          <i class="bi bi-speedometer2 display-5 text-danger"></i>
+          <h6 class="mt-3">Apache JMeter</h6>
+          <small>(Pruebas de velocidad)</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHPUnit -->
+    <div class="col-6 col-md-3">
+      <div class="card bg-secondary text-light shadow-sm h-100">
+        <div class="card-body">
+          <i class="bi bi-bug-fill display-5 text-light"></i>
+          <h6 class="mt-3">PHPUnit</h6>
+          <small>(Pruebas unitarias)</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experiencia / Formación -->
+<section id="formacion" class="container py-5">
+  <h2 class="mb-4">Formación</h2>
+  <div class="row align-items-center g-4">
+    
+    <!-- Imagen (puedes cambiarla por la real del instituto) -->
+    <div class="col-md-4 text-center">
+      <img src="img/instituto.jpg" alt="Instituto Andrés Avelino Cáceres Dorregaray" 
+           class="img-fluid rounded shadow">
+    </div>
+    
+    <!-- Información -->
+    <div class="col-md-8">
+      <h5 class="fw-bold">Instituto Andrés Avelino Cáceres Dorregaray</h5>
+      <p class="mb-2">
+        Estudié la carrera de <strong>Diseño y Programación Web</strong>, donde adquirí 
+        conocimientos en desarrollo backend, frontend y pruebas de software. 
+      </p>
+      <p class="mb-2">
+        El instituto se caracteriza por formar profesionales técnicos con un enfoque práctico 
+        y orientado al mercado laboral, promoviendo la innovación y el uso de nuevas tecnologías.
+      </p>
+      <p class="text-muted">
+        <i class="bi bi-calendar3"></i> Periodo de estudios: <em>[Coloca aquí los años, ej. 2022 - 2025]</em>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Habilidades Blandas -->
+<section id="habilidades-blandas" class="container py-5">
+  <h2 class="mb-4 text-center">Habilidades Blandas</h2>
+  <div class="row g-4">
+    
+    <!-- Comunicación -->
+    <div class="col-md-4">
+      <div class="card bg-secondary text-light h-100 shadow-sm text-center p-3">
+        <div class="display-4 mb-3 text-info">
+          <i class="bi bi-chat-dots-fill"></i>
+        </div>
+        <h5 class="fw-bold">Comunicación</h5>
+        <p class="small">
+          Capacidad para expresar ideas de forma clara y efectiva en equipos de trabajo.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Trabajo en equipo -->
+    <div class="col-md-4">
+      <div class="card bg-secondary text-light h-100 shadow-sm text-center p-3">
+        <div class="display-4 mb-3 text-warning">
+          <i class="bi bi-people-fill"></i>
+        </div>
+        <h5 class="fw-bold">Trabajo en equipo</h5>
+        <p class="small">
+          Colaboración activa con compañeros para alcanzar objetivos en común.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Adaptabilidad -->
+    <div class="col-md-4">
+      <div class="card bg-secondary text-light h-100 shadow-sm text-center p-3">
+        <div class="display-4 mb-3 text-success">
+          <i class="bi bi-arrow-repeat"></i>
+        </div>
+        <h5 class="fw-bold">Adaptabilidad</h5>
+        <p class="small">
+          Capacidad para aprender rápido y ajustarme a nuevas herramientas o entornos.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="bg-black text-center py-3 mt-5">
