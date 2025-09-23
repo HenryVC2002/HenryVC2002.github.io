@@ -14,8 +14,8 @@ const carpetas = [
     nombre: "Actividad 2",
     pdfs: [
       { 
-        nombre: "Mapa conceptual de HTML y CSS", 
-        archivo: "pdfs/actividad2/mapa-html-css.pdf" 
+        nombre: "actores y organización del proyecto web - Poma & Vilchez", 
+        archivo: "pdfs/actividad2/actores.pdf"
       }
     ]
   },
