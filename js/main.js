@@ -3,18 +3,18 @@ const carpetas = [
   {
     nombre: "Actividad 1",
     pdfs: [
-      { 
-        nombre: "Resumen del tema Fundamentos de un Proyecto Web - Vilchez", 
+      {
+        nombre: "Resumen del tema Fundamentos de un Proyecto Web - Vilchez",
         archivo: "pdfs/actividad1/fundamentos.pdf"
- 
+
       }
     ]
   },
   {
     nombre: "Actividad 2",
     pdfs: [
-      { 
-        nombre: "actores y organización del proyecto web - Poma & Vilchez", 
+      {
+        nombre: "actores y organización del proyecto web - Poma & Vilchez",
         archivo: "pdfs/actividad2/actores.pdf"
       }
     ]
@@ -22,18 +22,27 @@ const carpetas = [
   {
     nombre: "Actividad 3",
     pdfs: [
-      { 
-        nombre: "siguiente actividad", 
-        archivo: "pdfs/actividad3/ejercicio-js.pdf" 
+      {
+        nombre: "Diagramas de Historia",
+        archivo: "pdfs/actividad3/Diagramas Historia nro 2.pdf"
       },
     ]
   },
   {
     nombre: "Actividad 4",
     pdfs: [
-      { 
-        nombre: "Siguiente actividad", 
-        archivo: "pdfs/actividad4/ejercicio-js.pdf" 
+      {
+        nombre: "Sis de capacitación - TAP",
+        archivo: "pdfs/actividad4/SIS CAPACITACIÓN - TAP.pdf"
+      },
+    ]
+  },
+  {
+    nombre: "Actividad 5",
+    pdfs: [
+      {
+        nombre: "Sis de evaluación",
+        archivo: "pdfs/actividad5/SIS_EVALUACIÓN.pdf"
       },
     ]
   }
